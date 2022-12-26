@@ -5,6 +5,12 @@ logo {
     color: #5b6aefca;
 }
 
+p {
+  font-size: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5b6aefca;
+}
+
 body {
     min-height: 300vh;
     background-color: #E6F6EA;
@@ -15,7 +21,7 @@ div {
     width: 100%;
     height: 100%;
     top: 40%;
-    left: -5%;
+    left: -4%;
     position: fixed; /* make sure it stays put so we can see it! */
 }
 
@@ -28,7 +34,7 @@ div {
 #blob2 {
   position: fixed;
   right: 0;
-  top: 30%;
+  top: 40%;
 }
 
 #blob3 {
@@ -46,12 +52,12 @@ div {
 #blob5 {
   position: fixed;
   left: 0;
-  bottom: 30%;
+  bottom: 35%;
 }
 
 txt3 {
     position: fixed;
-    left: 61%;
+    left: 61.7%;
     animation: slideLeft 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
