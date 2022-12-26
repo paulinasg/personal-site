@@ -1,8 +1,8 @@
 logo {
-    font-size: 6vh;
+    font-size: 8vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    color: #5B69EF;
+    color: #5b6aefca;
 }
 
 body {
@@ -19,9 +19,39 @@ div {
     position: fixed; /* make sure it stays put so we can see it! */
 }
 
+#blob1 {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#blob2 {
+  position: fixed;
+  right: 0;
+  top: 30%;
+}
+
+#blob3 {
+  position: fixed;
+  right: 15%;
+  bottom: 0;
+}
+
+#blob4 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+#blob5 {
+  position: fixed;
+  left: 0;
+  bottom: 30%;
+}
+
 txt3 {
     position: fixed;
-    left: 57%;
+    left: 61%;
     animation: slideLeft 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
@@ -77,6 +107,6 @@ txt2 {
       transform: none;
     }
     100% {
-      transform: translate3d(-25%, 0, 0);
+      transform: translate3d(-28%, 0, 0);
     }
   }
