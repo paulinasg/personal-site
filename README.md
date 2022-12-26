@@ -1,4 +1,4 @@
-playing around with code for paulinagerch.uk
+playing around with code for [paulinagerch.uk](https://paulinagerch.uk)
 
 ## the goal 🚀
 - a fun, interactive website to allow the viewer to learn a little bit about me
