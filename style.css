@@ -1,3 +1,8 @@
+body {
+  font: 1em sans-serif;
+  color: #225447
+}
+
 .grid-container {
     overflow: hidden;
     display: grid;
@@ -7,10 +12,26 @@
     padding: 10px;
 }
 
+@media (max-width: 1200px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      font: 0.9em sans-serif;
+  }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        font: 0.75em sans-serif;
+    }
+}
+
 .grid-item-1 {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding-left: 40px;
+    width: 100%;
     justify-items: right;
     align-items: stretch;
 }
@@ -18,7 +39,7 @@
 .grid-item-2 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    padding-left: 80px;
+    
     padding-top: 20px;
 }
 
