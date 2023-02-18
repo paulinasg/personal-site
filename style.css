@@ -22,25 +22,15 @@ body {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   justify-self: center;
-  align-self: start;
+  align-self: center;
 }
 
 .grid-item-3 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  padding: 20px;
+  padding-left: 180px;
   justify-self: center;
-  align-self: center;
-}
-
-img.icon-links{
-  width: 6%;
-  height: auto;
-  padding: 40px;
-}
-
-a.icon-links {
-  text-decoration: none;
+  align-self: start;
 }
 
 .grid-item-4 {
@@ -67,6 +57,11 @@ a.icon-links {
     padding-top: 20px;
   }
   .grid-item-3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    padding-left: 90px;
+  }
+  .grid-item-4 {
     padding: 0px 50px 0px 50px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -88,10 +83,24 @@ a.icon-links {
     grid-row: 2 / 3;
   }
   .grid-item-3 {
+    grid-row: 3 / 4;
+    padding-left: 20px;
+  }
+  .grid-item-4 {
     padding: 0px 10px 0px 10px;
-    grid-row: 3 / 5;
+    grid-row: 4 / 5;
     grid-column: 1 / 2;
   }
+}
+
+img.icon-links{
+  width: 6%;
+  padding: 40px;
+  object-position: center;
+}
+
+a.icon-links {
+  text-decoration: none;
 }
 
 .radial-gradient {
