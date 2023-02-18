@@ -1,15 +1,15 @@
 body {
   font: 1em sans-serif;
-  color: #225447
+  color: #225447;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    padding: 20px;
-    place-items: center center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+  place-items: center center;
 }
 
 .grid-item-1 {
@@ -29,6 +29,7 @@ body {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   padding-left: 180px;
+  padding-top: 30px;
   justify-self: center;
   align-self: start;
 }
@@ -95,33 +96,35 @@ body {
 
 img.icon-links{
   width: 6%;
-  padding: 40px;
-  object-position: center;
 }
 
 a.icon-links {
   text-decoration: none;
 }
 
+span.icon-links {
+  padding: 40px;
+}
+
 .radial-gradient {
-    background: radial-gradient(circle at 30% 0%, #41cc99 0%,  #e8fff400 30%),
-                radial-gradient(circle at 70% 100%, #21c2a4 0%,  #e8fff400 40%);
-    background-color: #d4f8e5;
-    background-size: 200% 200%;
-    animation: gradient 5s linear infinite;
-    background-attachment: fixed;
+  background: radial-gradient(circle at 30% 0%, #41cc99 0%, #e8fff400 30%),
+    radial-gradient(circle at 70% 100%, #21c2a4 0%, #e8fff400 40%);
+  background-color: #d4f8e5;
+  background-size: 200% 200%;
+  animation: gradient 5s linear infinite;
+  background-attachment: fixed;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 30% 10%;
-	}
-	25% {
-		background-position: 90% 50%;
-	}
-	50% {
-		background-position: 60% 90%;
-	}
+  0% {
+    background-position: 30% 10%;
+  }
+  25% {
+    background-position: 90% 50%;
+  }
+  50% {
+    background-position: 60% 90%;
+  }
   75% {
     background-position: 10% 40%;
   }
