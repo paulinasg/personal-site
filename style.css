@@ -9,7 +9,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px;
-  padding: 0px 20px 0px 20px;
+  padding: 40px 20px 0px 20px;
   place-items: center center;
 }
 
@@ -31,6 +31,7 @@ body {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   padding-left: 180px;
+  padding-top: 10px;
   justify-self: center;
   align-self: start;
 }
@@ -121,6 +122,43 @@ span.icon-links {
   background-attachment: fixed;
 }
 
+#about-me {
+  font-style: italic;
+}
+
+#about-experience {
+  font-style: italic;
+}
+
+#about-skills {
+  font-style: italic;
+}
+
+#about-me.animate-up {
+  animation: move-up 1s ease-in-out forwards;
+}
+
+#about-experience.animate-up {
+  animation: move-up 1s ease-in-out forwards;
+}
+
+#about-skills.animate-up {
+  animation: move-up 1s ease-in-out forwards;
+}
+
+#about-me.animate-down {
+  animation: move-down 1s ease-in-out forwards;
+}
+
+#about-experience.animate-down {
+  animation: move-down 1s ease-in-out forwards;
+}
+
+#about-skills.animate-down {
+  animation: move-down 1s ease-in-out forwards;
+}
+
+
 @keyframes gradient {
   0% {
     background-position: 30% 10%;
@@ -136,5 +174,23 @@ span.icon-links {
   }
   100% {
     background-position: 30% 10%;
+  }
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
   }
 }
