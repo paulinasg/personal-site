@@ -1,48 +1,27 @@
 console.log("script.js loaded");
 
+const MAX_HEIGHT_VISIBLE = "300px";
+
 //getting elements from html
 const aboutMe = document.getElementById("about-me");
 const aboutExp = document.getElementById("about-experience");
 const aboutSkill = document.getElementById("about-skills");
 
-//hiding paragraph info blocks when page loads
-document.getElementById("about-me-info").style.display = "none";
-document.getElementById("about-experience-info").style.display = "none";
-document.getElementById("about-skills-info").style.display = "none";
-
-//print original position of subheading
-var rect = aboutMe.getBoundingClientRect();
-console.log(rect.top, rect.right, rect.bottom, rect.left);
-
-//adding animation class to subheadings when clicked
+//changing height of subheadings when clicked - transitions in css
 aboutMe.onclick = function() {
-  console.log("aboutMe clicked");
-  aboutMe.classList.add("animate-up");
-  
-  var rect = aboutMe.getBoundingClientRect();
-  console.log(rect.top, rect.right, rect.bottom, rect.left);
-
-  aboutExp.classList.add("animate-down");
-  aboutSkill.classList.add("animate-down");
-  document.getElementById("about-me-info").style.display = "block";
-  document.getElementById("about-experience-info").style.display = "none";
-  document.getElementById("about-skills-info").style.display = "none";
+  document.getElementById("about-me-info").style.maxHeight = MAX_HEIGHT_VISIBLE;
+  document.getElementById("about-experience-info").style.maxHeight = "0px";
+  document.getElementById("about-skills-info").style.maxHeight = "0px";
 }
 
 aboutExp.onclick = function() {
-  aboutMe.classList.add("animate-up");
-  aboutExp.classList.add("animate-up");
-  aboutSkill.classList.add("animate-down");
-  document.getElementById("about-me-info").style.display = "none";
-  document.getElementById("about-experience-info").style.display = "block";
-  document.getElementById("about-skills-info").style.display = "none";
+    document.getElementById("about-me-info").style.maxHeight = "0px";
+    document.getElementById("about-experience-info").style.maxHeight = MAX_HEIGHT_VISIBLE;
+    document.getElementById("about-skills-info").style.maxHeight = "0px";
 }
 
 aboutSkill.onclick = function() {
-  aboutMe.classList.add("animate-up");
-  aboutExp.classList.add("animate-up");
-  aboutSkill.classList.add("animate-up");
-  document.getElementById("about-me-info").style.display = "none";
-  document.getElementById("about-experience-info").style.display = "none";
-  document.getElementById("about-skills-info").style.display = "block";
+    document.getElementById("about-me-info").style.maxHeight = "0px";
+    document.getElementById("about-experience-info").style.maxHeight = "0px";
+    document.getElementById("about-skills-info").style.maxHeight = MAX_HEIGHT_VISIBLE;
 }

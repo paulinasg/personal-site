@@ -1,12 +1,43 @@
 body {
   /* overflow: hidden; */
-  font: 1.1em "Jost";
+  font: 1em "Jost";
   color: #225447;
   line-height: normal;
 }
 
 p, ul {
   line-height: 150%;
+}
+
+.info-block {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.link {
+  color: #225447;
+  text-align: center;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  transition: color 0.1s linear 0s;
+}
+
+.link:hover {
+  color: #3a937b;
+}
+
+img.icon-links{
+  width: 6%;
+}
+
+a.icon-links {
+  text-decoration: none;
+}
+
+span.icon-links {
+  padding: 40px;
 }
 
 .grid-container {
@@ -106,18 +137,6 @@ p, ul {
   }
 }
 
-img.icon-links{
-  width: 6%;
-}
-
-a.icon-links {
-  text-decoration: none;
-}
-
-span.icon-links {
-  padding: 40px;
-}
-
 .radial-gradient {
   background: radial-gradient(circle at 30% 0%, #41cc99 0%, #e8fff400 30%),
     radial-gradient(circle at 70% 100%, #21c2a4 0%, #e8fff400 40%);
@@ -126,50 +145,6 @@ span.icon-links {
   animation: gradient 5s linear infinite;
   background-attachment: fixed;
 }
-
-.link {
-  color: #225447;
-  text-decoration: none;
-  font-style: italic;
-  transition: color 0.1s linear 0s;
-}
-
-.link:hover {
-  color: #3a937b;
-}
-
-.link.animate-up {
-  animation: move-up 1s ease-in-out forwards;
-}
-
-.link.animate-down {
-  animation: move-down 1s ease-in-out forwards;
-}
-
-/* #about-me.animate-up {
-  animation: move-up 1s ease-in-out forwards;
-}
-
-#about-experience.animate-up {
-  animation: move-up 1s ease-in-out forwards;
-}
-
-#about-skills.animate-up {
-  animation: move-up 1s ease-in-out forwards;
-}
-
-#about-me.animate-down {
-  animation: move-down 1s ease-in-out forwards;
-}
-
-#about-experience.animate-down {
-  animation: move-down 1s ease-in-out forwards;
-}
-
-#about-skills.animate-down {
-  animation: move-down 1s ease-in-out forwards;
-} */
-
 
 @keyframes gradient {
   0% {
@@ -186,23 +161,5 @@ span.icon-links {
   }
   100% {
     background-position: 30% 10%;
-  }
-}
-
-@keyframes move-up {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100px);
-  }
-}
-
-@keyframes move-down {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(100px);
   }
 }
