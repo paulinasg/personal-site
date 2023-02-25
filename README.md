@@ -8,8 +8,10 @@ playing around with code for [paulinagerch.uk](https://paulinagerch.uk)
 - working on learning transitions and animations in CSS and JS
 
 ## next steps / ideas 🏃
+- add my CV for easy access
 - change the cursor icon
 - add some photos!
 - show some of my figma prototyping on the site
+- write about some of my favourite things!
 
 
