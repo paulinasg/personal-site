@@ -10,10 +10,18 @@ document.getElementById("about-me-info").style.display = "none";
 document.getElementById("about-experience-info").style.display = "none";
 document.getElementById("about-skills-info").style.display = "none";
 
+//print original position of subheading
+var rect = aboutMe.getBoundingClientRect();
+console.log(rect.top, rect.right, rect.bottom, rect.left);
+
 //adding animation class to subheadings when clicked
 aboutMe.onclick = function() {
   console.log("aboutMe clicked");
   aboutMe.classList.add("animate-up");
+  
+  var rect = aboutMe.getBoundingClientRect();
+  console.log(rect.top, rect.right, rect.bottom, rect.left);
+
   aboutExp.classList.add("animate-down");
   aboutSkill.classList.add("animate-down");
   document.getElementById("about-me-info").style.display = "block";

@@ -44,7 +44,7 @@ p, ul {
 .grid-item-4 {
   padding: 0px 100px 0px 100px;
   line-height: 3em;
-  grid-row: 2 / 3;
+  grid-row: 1 / 4;
   grid-column: 2 / 3;
   font-size: larger;
 }
@@ -73,7 +73,7 @@ p, ul {
   .grid-item-4 {
     padding: 0px 50px 0px 50px;
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 1 / 4;
   }
 }
 
@@ -131,6 +131,11 @@ span.icon-links {
   color: #225447;
   text-decoration: none;
   font-style: italic;
+  transition: color 0.1s linear 0s;
+}
+
+.link:hover {
+  color: #3a937b;
 }
 
 .link.animate-up {
@@ -186,10 +191,10 @@ span.icon-links {
 
 @keyframes move-up {
   0% {
-    padding-top: 0px;
+    transform: translateY(0);
   }
   100% {
-    padding-top: 200px;
+    transform: translateY(100px);
   }
 }
 
