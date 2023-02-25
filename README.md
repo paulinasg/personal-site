@@ -7,4 +7,9 @@ playing around with code for [paulinagerch.uk](https://paulinagerch.uk)
 ## current status 📚
 - working on learning transitions and animations in CSS and JS
 
+## next steps / ideas 🏃
+- change the cursor icon
+- add some photos!
+- show some of my figma prototyping on the site
+
 
