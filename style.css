@@ -111,11 +111,11 @@ span.icon-links {
 
 @media (max-width: 600px) {
   .grid-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     font: 0.9em "Jost";
-    min-height: 100vh;
+    min-height: 90vh;
   }
   .grid-item-1 {
     grid-row: 1 / 2;
