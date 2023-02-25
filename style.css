@@ -1,7 +1,12 @@
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   font: 1.1em "Jost";
   color: #225447;
+  line-height: normal;
+}
+
+p, ul {
+  line-height: 150%;
 }
 
 .grid-container {
@@ -122,19 +127,21 @@ span.icon-links {
   background-attachment: fixed;
 }
 
-#about-me {
+.link {
+  color: #225447;
+  text-decoration: none;
   font-style: italic;
 }
 
-#about-experience {
-  font-style: italic;
+.link.animate-up {
+  animation: move-up 1s ease-in-out forwards;
 }
 
-#about-skills {
-  font-style: italic;
+.link.animate-down {
+  animation: move-down 1s ease-in-out forwards;
 }
 
-#about-me.animate-up {
+/* #about-me.animate-up {
   animation: move-up 1s ease-in-out forwards;
 }
 
@@ -156,7 +163,7 @@ span.icon-links {
 
 #about-skills.animate-down {
   animation: move-down 1s ease-in-out forwards;
-}
+} */
 
 
 @keyframes gradient {
@@ -179,10 +186,10 @@ span.icon-links {
 
 @keyframes move-up {
   0% {
-    transform: translateY(0);
+    padding-top: 0px;
   }
   100% {
-    transform: translateY(-100px);
+    padding-top: 200px;
   }
 }
 
