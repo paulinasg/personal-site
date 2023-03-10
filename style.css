@@ -125,7 +125,7 @@ span.icon-links {
   .grid-item-2 {
     grid-row: 1 / 2;
     align-self: start;
-    padding-top: 10px;
+    padding-top: 5px;
   }
   .grid-item-3 {
     grid-row: 1 / 2;
@@ -134,7 +134,7 @@ span.icon-links {
     padding-bottom: 0px;
   }
   .grid-item-4 {
-    padding: 0px 10px 80px 10px;
+    padding: 0px 10px 50px 10px;
     grid-row: 2 / 4;
     grid-column: 1 / 2;
   }
