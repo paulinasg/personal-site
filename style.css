@@ -114,6 +114,7 @@ span.icon-links {
     /* overflow: hidden; */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px 20px 0px 20px;
     font: 0.9em "Jost";
     min-height: 90vh;
   }
